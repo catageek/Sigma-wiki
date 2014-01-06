@@ -12,9 +12,11 @@ Use braces to create local scope where possible to reduce redefinition errors.
 Use the following as a guide for braces:
 
     switch () {
-        case:
-            break;
-        default;
+    case:
+        
+    break;
+    default;
+        
     }
     
     class CClass {    
@@ -48,7 +50,7 @@ Use the following as a guide for braces:
 
 Do place elements that are part of core Sigma inside the sigma namespace.
 
-Namespaces should be one word and lowercase.
+Namespaces should be one word and lowercase, with the exception of the core Sigma namespace.
 
 ## **Variables**
 **DON'T USE GLOBALS!** If you have to, use uppercase letters with an _ to separate words. 
