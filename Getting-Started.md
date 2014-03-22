@@ -15,11 +15,13 @@ The build process might seem complex, but, if followed properly, it should be pa
 * [libogg](https://www.xiph.org/ogg/) 1.3.1 - Codec for OpenAL
 * [libvorbis](https://www.xiph.org/ogg/) 1.3.3 - Codec for OpenAL
 
-## Building the Prerequisistes
+## Building the Prerequisites
 **Linux** This step will most likely be done when downloading from the package manager.
 
 **Windows** You must either get the prebuilt binary package or build each library (build the **shared** version unless otherwise stated). After you build the source you will need to copy them to `sigma/lib/x86` (create this if it doesn't exist).
 ### GLFW
+**Linux** You must use at the minimum GLFW3, so in most cases you would need to download and build this manually!
+
 1. First, follow the instructions on the page: [GLFW Building](http://www.glfw.org/docs/latest/compile.html). (This will build as a static library by default. Leave it that way.)
 2. Next, copy the libraries from `glfw/build/src/[Debug|Release]` into `sigma/lib/x86/[debug|release]`
 3. Finally, copy the include files from `glfw/include` to `sigma/include/libraries`
