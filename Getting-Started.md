@@ -34,7 +34,7 @@ The build process might seem complex, but, if followed properly, it should be pa
 ### Bullet
 1. First, follow the instructions on the page: [Bullet Building](http://bulletphysics.org/mediawiki-1.5.8/index.php/Installation).
 2. Next, copy the libraries from `bullet/build/lib/[Debug|Release]/Win32` into `sigma/lib/x86/[debug|release]`
-3. Finally, copy the include files from `bullet/src` to `sigma/include/libraries`
+3. Finally, copy the include files from `bullet/src` to `sigma/include/libraries/bullet`
 
 ### GLM.
 GLM is a header only library. You must copy the `glm/glm` folder into `sigma/include/libraries/glm` (The contents of the glm/glm folder will now be in libraries/glm, or you can just copy the glm folder in glm and paste it in include/libraries.)
