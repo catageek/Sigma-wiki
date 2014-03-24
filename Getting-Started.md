@@ -24,12 +24,12 @@ The build process might seem complex, but, if followed properly, it should be pa
 
 1. First, follow the instructions on the page: [GLFW Building](http://www.glfw.org/docs/latest/compile.html). (This will build as a static library by default. Leave it that way.)
 2. Next, copy the libraries from `glfw/build/src/[Debug|Release]` into `sigma/lib/x86/[debug|release]`
-3. Finally, copy the include files from `glfw/include` to `sigma/include/libraries`
+3. Finally, copy the include folder from `glfw/include` to `sigma/include/libraries`
 
 ### GLEW
 1. First, follow the instructions on the page: [GLEW Building](http://glew.sourceforge.net/build.html).
 2. Next, copy the libraries from `glew/lib/[Debug|Release]/Win32` into `sigma/lib/x86/[debug|release]`
-3. Finally, copy the include files from `glfw/include` to `sigma/include/libraries`
+3. Finally, copy the include folder from `glew/include` to `sigma/include/libraries`
 
 ### Bullet
 1. First, follow the instructions on the page: [Bullet Building](http://bulletphysics.org/mediawiki-1.5.8/index.php/Installation).
@@ -38,3 +38,8 @@ The build process might seem complex, but, if followed properly, it should be pa
 
 ### GLM.
 GLM is a header only library. You must copy the `glm/glm` folder into `sigma/include/libraries/glm` (The contents of the glm/glm folder will now be in libraries/glm, or you can just copy the glm folder in glm and paste it in include/libraries.)
+
+### OpenAL Soft
+1. First, follow the instructions on the page (near the bottom): [OpenAL Soft Homepage](http://kcat.strangesoft.net/openal.html).
+2. Next, copy OpenAL32.lib from `openal-soft/build/[Debug|Release]` into `sigma/lib/x86/[debug|release]`
+3. Finally, copy the AL folder from `openal-soft/include` to `sigma/include/libraries`
