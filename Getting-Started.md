@@ -13,7 +13,7 @@ The build process might seem complex, but, if followed properly, it should be pa
 * [Bullet](http://www.bulletphysics.org) 2.81 - physics
 * [OpenAL Soft](http://kcat.strangesoft.net/openal.html) 1.15.1 - OpenAL audio
 * [libogg](https://www.xiph.org/ogg/) 1.3.1 - Codec for OpenAL
-* [libvorbis](https://www.xiph.org/ogg/) 1.3.3 - Codec for OpenAL
+* [libvorbis](https://www.xiph.org/ogg/) 1.3.4 - Codec for OpenAL
 
 ## Building the Prerequisites
 **Linux** This step will most likely be done when downloading from the package manager.
@@ -43,3 +43,12 @@ GLM is a header only library. You must copy the `glm/glm` folder into `sigma/inc
 1. First, follow the instructions on the page (near the bottom): [OpenAL Soft Homepage](http://kcat.strangesoft.net/openal.html).
 2. Next, copy OpenAL32.lib from `openal-soft/build/[Debug|Release]` into `sigma/lib/x86/[debug|release]`
 3. Finally, copy the AL folder from `openal-soft/include` to `sigma/include/libraries`
+
+### OggVorbis
+1. First, open the libogg folder.
+2. Use the appropriate build folder and files for your platform and build the static library version.
+3. Copy the folder in `libbogg/inlcude` into **BOTH** the `libvorbis/include` folder and `sigma/include/libraries`
+4. Go inside the libvorbis folder.
+5. Use the appropriate build folder and files for your platform and build the static library version (this may error for some projects, but as long as the libvorbis_static project builds you're fine).
+6. Copy the include folder from `libvorbis/include/` to `sigma/include/libraries`
+7. Finally copy the lib (libogg_static.lib from **BOTH** the libvorbis and libogg _platform_/[Debug|Release] into `sigma/lib/x86/[debug|release]`
