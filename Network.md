@@ -22,7 +22,7 @@ This struct is used in the following examples:
 
 #Build a message
 
-The message framework is built around the `FrameObject` class declared in `inlcude/systems/network/Protocol.h`. you must build a FrameObject to be able to send data on the network. Here is an example:
+The message framework is built around the `FrameObject` class declared in `include/systems/network/Protocol.h`. you must build a FrameObject to be able to send data on the network. Here is an example:
 
 	Sigma::FrameObject packet{};
 	packet << "This is a message";				// dynamic resizing, we can send more bytes than the buffer can contain.
