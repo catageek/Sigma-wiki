@@ -54,7 +54,7 @@ or
 
 ##Handler template
 	
-	To receive the message, a message handler must be implemented. The implementation uses static polymorphism through template specialization. It means you must specialize the following template:
+To receive the message, a message handler must be implemented. The implementation uses static polymorphism through template specialization. It means you must specialize the following template:
 
 	template<int Major, int Minor, bool isClient>
 	static void Process();
