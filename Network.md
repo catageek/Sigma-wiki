@@ -12,7 +12,7 @@ To create a message, you must first define what are the Major and Minor numbers 
 
 #Message structure
 
-A message is usually a struct with primitive types or buffers. The message framework accept any struct object as a body for a message. It is to the implementer or the message handler to define the struct object that will be used as body of its message.
+A message is usually a struct with primitive types or buffers. The message framework accept any struct object as a body for a message. It is to the implementer of the message handler to define the struct object that will be used as body of its message.
 
 This struct is used in the following examples:
 
