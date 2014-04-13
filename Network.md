@@ -33,7 +33,7 @@ You don't need a struct to describe your message at this point, but if you have 
 
 	packet.GetContent<MyPacket>()->field = "data...";	// warning: no dynamic resizing. The buffer has a length of 20.
 	
-Accessing the packet through the GetContent() templated function allow to access its fields separately but without the dynamic resizing.
+Accessing the packet through the GetContent() templated function allow to access its fields separately but without the dynamic resizing if length exceeds the size of the struct.
 
 #Send message
 
